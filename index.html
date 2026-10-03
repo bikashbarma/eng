@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="theme-color" content="#000000">
-<meta name="description" content="Comprehension Mock Test — WBPTET 2022 English Prose Passage-1 — 8 Questions">
-<meta property="og:title" content="COMPREHENSION MOCK TEST — 8 QUESTIONS">
-<meta property="og:description" content="WBPTET 2022 English Prose Passage-1 — Comprehension Test">
-<meta name="twitter:title" content="COMPREHENSION MOCK TEST — 8 QUESTIONS">
-<meta name="twitter:description" content="WBPTET 2022 English Prose Passage-1 — Comprehension Test">
-<meta name="application-name" content="COMPREHENSION MOCK TEST">
-<title>COMPREHENSION MOCK TEST — 8 QUESTIONS</title>
+<meta name="description" content="WBPTET 2022 English Prose Passage-2 — 7 Questions">
+<meta property="og:title" content="WBPTET 2022 — ENGLISH PROSE PASSAGE-2 | 7 QUESTIONS">
+<meta property="og:description" content="WBPTET 2022 English Prose Passage-2 — Comprehension Test">
+<meta name="twitter:title" content="WBPTET 2022 — ENGLISH PROSE PASSAGE-2 | 7 QUESTIONS">
+<meta name="twitter:description" content="WBPTET 2022 English Prose Passage-2 — Comprehension Test">
+<meta name="application-name" content="WBPTET 2022 — ENGLISH PROSE PASSAGE-2">
+<title>WBPTET 2022 — ENGLISH PROSE PASSAGE-2 | 7 QUESTIONS</title>
 <style>
 :root{--bg:#000;--panel:#090909;--panel2:#111;--line:#292929;--text:#fff;--muted:#aaa;--green:#18e76b;--red:#ff3152;--gold:#ffd45a;--blue:#5f8cff}
 *{box-sizing:border-box}
@@ -28,6 +28,7 @@ body.light .topbar{background:rgba(255,255,255,.95)}
 body.light .themeBtn,body.light .adminBtn,body.light .correctBtn{background:#fff;color:#111;border-color:#c4c9d3}
 .adminBtn{background:var(--gold);color:#000;border-color:var(--gold)}
 .correctBtn{display:block;margin:auto;background:#0b301b;border-color:#1e9c52;color:#69ff9d;min-width:110px}
+.timer.timerHidden{display:none!important}
 .timer{margin-top:3px;font-variant-numeric:tabular-nums;font-size:18px;font-weight:1000;letter-spacing:.04em}
 .timer.warn{color:#fff!important;animation:timerBlink .48s steps(2,start) infinite!important;transform:scale(1.32);text-shadow:0 0 6px #fff,0 0 16px var(--red),0 0 32px var(--red),0 0 48px #ff8a00;font-size:clamp(24px,4vw,34px)!important;letter-spacing:.08em}@keyframes timerBlink{0%,100%{opacity:1;filter:brightness(1.2);transform:scale(1.32)}50%{opacity:.28;filter:brightness(2.3);transform:scale(1.5)}}
 .screen{position:fixed;inset:68px 0 0;display:flex;align-items:center;justify-content:center;padding:18px}
@@ -79,6 +80,7 @@ body.light .name{background:#f8f9fc;color:#111;border-color:#cfd4de}
 .revisionBox{margin-top:18px;padding:16px;border:1px solid #ff3152;border-radius:16px;background:linear-gradient(135deg,rgba(255,49,82,.12),rgba(255,212,90,.08));box-shadow:0 0 24px rgba(255,49,82,.12)}
 .revisionTitle{font-size:18px;font-weight:1000;color:#ffd45a}
 .revisionInfo{margin-top:5px;color:var(--muted);font-weight:750;line-height:1.45}
+.revisionLink{display:block;margin:16px auto 6px;width:min(520px,100%);padding:10px 14px;text-align:center;background:none;border:0;color:#ff0000;font-size:22px;font-weight:1000;text-decoration:underline;cursor:pointer;animation:revisionTextBlink .8s steps(1,end) infinite}.revisionLink:active{transform:scale(.98)}
 .revisionBtn{margin-top:11px;width:100%;min-height:54px;border:2px solid #ffd45a;border-radius:13px;background:linear-gradient(90deg,#5b0010,#9d1230,#5b0010);background-size:200% 100%;color:#fff;font-weight:1000;font-size:17px;box-shadow:0 0 12px rgba(255,49,82,.5);animation:revisionPulse 1.5s ease-in-out infinite}
 @keyframes revisionPulse{0%,100%{box-shadow:0 0 10px rgba(255,49,82,.45)}50%{box-shadow:0 0 26px rgba(255,212,90,.8)}}
 .result,.admin{position:fixed;inset:68px 0 0;overflow:auto;padding:18px}
@@ -204,20 +206,25 @@ body.light .viewModeExit{border-color:#111}
   50%,100%{opacity:0;visibility:hidden}
 }
 </style>
-<style id="REAL_EXAM_LAST10_TIMER_ONLY">
-#timer.real-exam-last10{
+<style id="REAL_EXAM_LAST2_TIMER_ONLY">
+#timer.real-exam-last2{
   color:#ff0000 !important;
   background:transparent !important;
   background-color:transparent !important;
   border:0 !important;
   box-shadow:none !important;
   text-shadow:none !important;
-  animation:realExamLast10Blink 1.8s ease-in-out infinite !important;
+  animation:realExamLast2Blink 1.8s ease-in-out infinite !important;
 }
-@keyframes realExamLast10Blink{
+@keyframes realExamLast2Blink{
   0%,100%{opacity:1}
   50%{opacity:.45}
 }
+</style>
+
+<style id="REAL_EXAM_LAST2_TIMER_STYLE">
+#timer.real-exam-last2{color:#ff0000!important;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:none!important;animation:realExamLast2Blink 0.8s steps(1,end) infinite!important}
+@keyframes realExamLast2Blink{0%,49%{opacity:1}50%,100%{opacity:.2}}
 </style>
 </head>
 <body>
@@ -246,9 +253,9 @@ body.light .viewModeExit{border-color:#111}
   <div class="examInner">
     <div class="progress"><div class="progressTop"><span id="progress"></span><span id="sectionLabel"></span></div><div class="progressTrack"><div id="progressFill" class="progressFill"></div></div></div>
     <div id="passageBox" class="passageBox">
-      <div class="passageHead">PROSE · PASSAGE-1</div>
+      <div class="passageHead">PROSE · PASSAGE-2</div>
       <div class="passageIntro">Read the following passages carefully and answer the questions given below: [WBPTET 2022]</div>
-      <div class="passageText">The victory of the small Greek democracy of Athens over the mighty Persian empire in 490 BC is one of the most famous events in history. Darius, King of the Persian Empire, was furious because Athens had interceded for the other Greek city states in revolt against the Persian domination. In anger the King sent an enormous army to defeat Athens. He thought it would take drastic steps to pacify the rebellious part of the empire. Persia was ruled by one man. In Athens, however, all citizens helped to rule. Ennobled by this participation, Athenians were prepared to die for their city state. Perhaps this was the secret of the remarkable victory at Marathon, which freed them from Persian rule. On their way to Marathon, the Persians tried to fool some Greek city states by claiming to have come in peace. The frightened citizens of Delos refused to believe this. Not wanting to abet the conquest of Greece, they fled from their city and did not return until the Persians had left.</div>
+      <div class="passageText">It was a cold, wet and windy March evening when Prem came back from the village with his wife and first-born child, then just four months old. In those days, they had to walk to the house from the bus stand; it was a half-hour walk in the cold rain, and the baby was all wrapped up when they entered the front room. Finally, I got a glimpse of him. And he of me and it was a friendship at first sight. Little Rakesh (as he was to be called) grabbed me by my nose and held on. He did not have much of a nose to grab, but he had a dimpled chin and I played with it until he smiled.<br><br>The little chap spent a good deal of his time with me during those first two years in Maplewood—learning to crawl, to toddle and then to walk unsteadily about the little sitting room. I would carry him into the garden and later, up the steep gravel path to the main road. Rakesh enjoyed these little excursions, and so did I, because in pointing out trees, flowers, birds, butterflies, beetles, grasshoppers, et al, I was giving myself a chance to observe them better instead of just taking them for granted.<br><br>In particular, there was a pair of squirrels that lived in the big oak tree outside the cottage. Squirrels are rare in Mussoorie though common down the valley. This couple must have come up for the summer. They became quite friendly, and although they never got around to taking food from our hands, they were soon entering the house quite freely. The sitting room window opened directly onto the oak tree whose various denizens—ranging from tag-beetles to small birds and even and acrobatic bat—took to darting in and out of the cottage at various times of the day and night.</div>
     </div>
     <div id="revisionBanner"><span class="revisionStar">★</span> <span class="revisionText">যেগুলি ভুল করলাম</span> <span class="revisionStar">★</span></div><div id="qcard" class="qcard"></div>
   </div>
@@ -272,11 +279,15 @@ body.light .viewModeExit{border-color:#111}
 </section>
 
 <script>
-const PASSAGE_TEXT="The victory of the small Greek democracy of Athens over the mighty Persian empire in 490 BC is one of the most famous events in history. Darius, King of the Persian Empire, was furious because Athens had interceded for the other Greek city states in revolt against the Persian domination. In anger the King sent an enormous army to defeat Athens. He thought it would take drastic steps to pacify the rebellious part of the empire. Persia was ruled by one man. In Athens, however, all citizens helped to rule. Ennobled by this participation, Athenians were prepared to die for their city state. Perhaps this was the secret of the remarkable victory at Marathon, which freed them from Persian rule. On their way to Marathon, the Persians tried to fool some Greek city states by claiming to have come in peace. The frightened citizens of Delos refused to believe this. Not wanting to abet the conquest of Greece, they fled from their city and did not return until the Persians had left.";
-const QUESTIONS=[{"orig":1,"id":1,"text":"The people of Delos did not want to _____ the conquest of Greece.","options":["end","think about","support","day dream about"],"answer":"C","explanation":"Correct answer: C.","kind":"English Prose"},{"orig":2,"id":2,"text":"Statement (i) Persia was autocratic\nStatement (ii) Athens was democratic\nChoose the right option:","options":["Statement (i) is false, and Statement (ii) is true","Statements (i) and (ii) both are true","Statement (i) is true and Statement (ii) is false","Both Statements (i) and (ii) are false"],"answer":"B","explanation":"Correct answer: B.","kind":"English Prose"},{"orig":3,"id":3,"text":"Darius took drastic steps to _____ the rebellious part of the empire.","options":["weaken","conquer","destroy","calm"],"answer":"D","explanation":"Correct answer: D.","kind":"English Prose"},{"orig":4,"id":4,"text":"Athens had _____ the other Greek city states against the Persians.","options":["refused to help","wanted to fight","intervened on behalf of","given orders to fight"],"answer":"C","explanation":"Correct answer: C.","kind":"English Prose"},{"orig":5,"id":5,"text":"The word ‘abet’ as used in the passage means—","options":["fight","follow","assist","share"],"answer":"C","explanation":"Correct answer: C.","kind":"English Prose"},{"orig":6,"id":6,"text":"Which of the following options come closest to the meaning of the word ‘Ennobled’ as used in the passage is—","options":["worried","frightened","panicked","encouraged"],"answer":"D","explanation":"Correct answer: D.","kind":"English Prose"},{"orig":7,"id":7,"text":"The people of Delos ran away because they were—","options":["bold","wise","impatient","annoyed"],"answer":"B","explanation":"Correct answer: B.","kind":"English Prose"},{"orig":8,"id":8,"text":"‘Persia was ruled by one man.’ The underlined word in the sentence is an example of—","htmlText":"‘<u>Persia</u> was ruled by one man.’ The underlined word in the sentence is an example of—","options":["Noun","Adjective","Pronoun","Adverb"],"answer":"A","explanation":"Correct answer: A.","kind":"English Prose"}]; let DURATION=30*60;
-const DEFAULT_DURATION_SECONDS=30*60;
+const TEST_TITLE="WBPTET 2022 — ENGLISH PROSE PASSAGE-2 | 7 QUESTIONS";
+const PASSAGE_LABEL="PROSE · PASSAGE-2";
+const PASSAGE_INTRO="Read the following passages carefully and answer the questions given below: [WBPTET 2022]";
+const PASSAGE_TEXT="It was a cold, wet and windy March evening when Prem came back from the village with his wife and first-born child, then just four months old. In those days, they had to walk to the house from the bus stand; it was a half-hour walk in the cold rain, and the baby was all wrapped up when they entered the front room. Finally, I got a glimpse of him. And he of me and it was a friendship at first sight. Little Rakesh (as he was to be called) grabbed me by my nose and held on. He did not have much of a nose to grab, but he had a dimpled chin and I played with it until he smiled.\n\nThe little chap spent a good deal of his time with me during those first two years in Maplewood—learning to crawl, to toddle and then to walk unsteadily about the little sitting room. I would carry him into the garden and later, up the steep gravel path to the main road. Rakesh enjoyed these little excursions, and so did I, because in pointing out trees, flowers, birds, butterflies, beetles, grasshoppers, et al, I was giving myself a chance to observe them better instead of just taking them for granted.\n\nIn particular, there was a pair of squirrels that lived in the big oak tree outside the cottage. Squirrels are rare in Mussoorie though common down the valley. This couple must have come up for the summer. They became quite friendly, and although they never got around to taking food from our hands, they were soon entering the house quite freely. The sitting room window opened directly onto the oak tree whose various denizens—ranging from tag-beetles to small birds and even and acrobatic bat—took to darting in and out of the cottage at various times of the day and night."
+const QUESTIONS=[{"orig":1,"id":1,"text":"“I would carry him into the garden, and later, up the steep gravel path to the main road.” This sentence is an example of—","options":["Simple past tense","Past perfect tense","Past continuous tense","Past perfect continuous tense"],"answer":"A","explanation":"Correct answer: A.","kind":"English Prose"},{"orig":2,"id":2,"text":"‘Finally, I got a glimpse of him.’—this is an example of—","options":["assertive sentence","interrogative sentence","imperative sentence","exclamatory sentence"],"answer":"A","explanation":"Correct answer: A.","kind":"English Prose"},{"orig":3,"id":3,"text":"The synonym of ‘denizen’ is—","options":["army","students","occupants","animals"],"answer":"C","explanation":"Correct answer: C.","kind":"English Prose"},{"orig":4,"id":4,"text":"‘Et al’ means :","options":["also","either","but","and others"],"answer":"D","explanation":"Correct answer: D.","kind":"English Prose"},{"orig":5,"id":5,"text":"In his excursion little Rakesh was accompanied by—","options":["the narrator","Prem","his brother","his friends"],"answer":"A","explanation":"Correct answer: A.","kind":"English Prose"},{"orig":6,"id":6,"text":"The animal which is rare in the place mentioned in the passage is—","options":["tiger","bat","squirrel","tag-beetle"],"answer":"C","explanation":"Correct answer: C.","kind":"English Prose"},{"orig":7,"id":7,"text":"Little Rakesh was _____ when he saw the narrator for the first time in his life.","options":["two years old","four months old","four years old","a baby of one year"],"answer":"B","explanation":"Correct answer: B.","kind":"English Prose"}];
+let DURATION=15*60;
+const DEFAULT_DURATION_SECONDS=15*60;
 const ADMIN_PASSWORD="Bikash@420";
-const RESULTS_KEY="wbptet_2022_prose_passage1_8q_v1";
+const RESULTS_KEY="wbptet_2022_prose_passage2_7q_v1";
 const CENTRAL_SCOREBOARD_URL="https://script.google.com/macros/s/AKfycby_4CKFXC9kKnNZbUE_BWLQBPQlH44kOzR1CpNhfHKNL5AO2Kj5JAeVyRymPeFldVM/exec";
 const CENTRAL_API_TOKEN="CTET_SCOREBOARD_2026_BIKAS_420";
 const CENTRAL_ADMIN_CACHE_KEY="geo_central_scoreboard_admin_cache_v1";
@@ -500,16 +511,29 @@ function formatCentralTimeUsed(raw,startExam,completedAt,resultDuration){
 }
 function sectionFor(q){ return "WBPTET 2022 • LANGUAGE-II ENGLISH • PROSE"; }
 
+function currentQuestionList(){ return revisionMode ? revisionQuestions : QUESTIONS; }
+function currentAnswerStore(){ return revisionMode ? revisionAnswers : answers; }
+function currentSubmitted(){ return revisionMode ? revisionSubmitted : submitted; }
+
 function render(){
-  const list=QUESTIONS;
-  const answeredCount=Object.keys(answers).filter(k=>list.some(q=>q.id===Number(k))).length;
-  const correctCount=Object.keys(answers).filter(k=>{const q=list.find(x=>x.id===Number(k));return q&&answers[q.id]===q.answer;}).length;
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  const answeredCount=Object.keys(store).filter(k=>list.some(q=>q.id===Number(k))).length;
+  const correctCount=Object.keys(store).filter(k=>{
+    const q=list.find(x=>x.id===Number(k));
+    return q && store[q.id]===q.answer;
+  }).length;
+
   $("progress").textContent=`${answeredCount} of ${list.length} questions answered`;
   const pf=$("progressFill");
-  if(pf){pf.style.width=Math.round((answeredCount/list.length)*100)+"%";pf.classList.toggle("done",answeredCount===list.length);}
-  $("sectionLabel").textContent="WBPTET 2022 · PASSAGE-1 · ENGLISH PROSE";
+  if(pf){
+    pf.style.width=(list.length?Math.round((answeredCount/list.length)*100):0)+"%";
+    pf.classList.toggle("done",answeredCount===list.length);
+  }
+  $("sectionLabel").textContent=revisionMode ? "REVISION TEST · WRONG QUESTIONS" : "WBPTET 2022 · PASSAGE-2 · ENGLISH PROSE";
+
   const blocks=list.map(q=>{
-    const a=answers[q.id]||"";
+    const a=store[q.id]||"";
     return `<div class="allQuestion" id="question-${q.id}">
       <div class="qnum">Q${q.id} · ${q.kind.toUpperCase()}</div>
       <div class="question">${q.htmlText||esc(q.text)}</div>
@@ -526,19 +550,26 @@ function render(){
       }).join("")}</div>
     </div>`;
   }).join("");
+
   $("qcard").innerHTML=`
     <div class="questionScroll">
       ${blocks}
       <div class="finalSubmitArea">
-        <button id="finalSubmitBtn" class="next finalSubmitBtn" type="button" disabled>FINAL SUBMIT</button>
+        <button id="finalSubmitBtn" class="next finalSubmitBtn" type="button" disabled>${revisionMode?"REVISION SUBMIT":"FINAL SUBMIT"}</button>
       </div>
     </div>`;
-  $("qcard").querySelectorAll("[data-opt]").forEach(el=>el.onclick=()=>choose(Number(el.dataset.q),el.dataset.opt));
+
+  $("qcard").querySelectorAll("[data-opt]").forEach(el=>{
+    el.onclick=()=>choose(Number(el.dataset.q),el.dataset.opt);
+  });
+
   updateFinalSubmitState();
+
   $("finalSubmitBtn").onclick=()=>{
-    if(Object.keys(answers).length !== QUESTIONS.length){
+    const answered=Object.keys(currentAnswerStore()).filter(k=>list.some(q=>q.id===Number(k))).length;
+    if(answered !== list.length){
       updateFinalSubmitState();
-      const firstUnanswered=QUESTIONS.find(q=>!answers[q.id]);
+      const firstUnanswered=list.find(q=>!currentAnswerStore()[q.id]);
       if(firstUnanswered){
         const target=document.getElementById(`question-${firstUnanswered.id}`);
         if(target)target.scrollIntoView({behavior:"smooth",block:"center"});
@@ -546,24 +577,36 @@ function render(){
       return;
     }
     try{if(navigator.vibrate)navigator.vibrate([120,40,180]);}catch(e){}
-    submitExam();
+    if(revisionMode) finishRevision();
+    else submitExam();
   };
+
   $("correctBtn").textContent=`CORRECT: ${correctCount}/${list.length}`;
 }
 
-function countCorrectLive(){let n=0;QUESTIONS.forEach(q=>{if(answers[q.id]===q.answer)n++});return n}
+function countCorrectLive(){
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  let n=0;
+  list.forEach(q=>{if(store[q.id]===q.answer)n++});
+  return n;
+}
 
 function choose(qid,L){
-  if(submitted)return;
-  // Each question is mandatory and its first selected option is permanently locked.
-  if(answers[qid])return;
-  answers[qid]=L;
-  const q=QUESTIONS.find(x=>x.id===qid);
+  if(currentSubmitted())return;
+
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  if(store[qid])return;
+
+  const q=list.find(x=>x.id===qid);
+  if(!q)return;
+  store[qid]=L;
   const ok=L===q.answer;
-  // Restore the original option-feedback experience: sound + green fireworks for correct,
-  // buzzer + red fireworks for wrong.
+
   beep(ok);
   fireworks(ok);
+
   const btns=document.querySelectorAll(`[data-q="${qid}"]`);
   btns.forEach(b=>{
     const opt=b.dataset.opt;
@@ -574,22 +617,27 @@ function choose(qid,L){
     if(opt===L) b.classList.add("selected");
     b.classList.add("answer-locked");
   });
-  const answeredCount=Object.keys(answers).length;
-  $("progress").textContent=`${answeredCount} of ${QUESTIONS.length} questions answered`;
+
+  const answeredCount=Object.keys(store).filter(k=>list.some(x=>x.id===Number(k))).length;
+  $("progress").textContent=`${answeredCount} of ${list.length} questions answered`;
   const pf=$("progressFill");
-  if(pf){pf.style.width=Math.round((answeredCount/QUESTIONS.length)*100)+"%";pf.classList.toggle("done",answeredCount===QUESTIONS.length);}
-  $("correctBtn").textContent=`CORRECT: ${countCorrectLive()}/${QUESTIONS.length}`;
+  if(pf){
+    pf.style.width=(list.length?Math.round((answeredCount/list.length)*100):0)+"%";
+    pf.classList.toggle("done",answeredCount===list.length);
+  }
+  $("correctBtn").textContent=`CORRECT: ${countCorrectLive()}/${list.length}`;
   updateFinalSubmitState();
 }
 
 function updateFinalSubmitState(){
   const btn=$("finalSubmitBtn");
   if(!btn)return;
-  const answeredCount=Object.keys(answers).length;
-  const complete=answeredCount===QUESTIONS.length;
+  const list=currentQuestionList();
+  const store=currentAnswerStore();
+  const answeredCount=Object.keys(store).filter(k=>list.some(q=>q.id===Number(k))).length;
+  const complete=answeredCount===list.length;
   btn.disabled=!complete;
-  btn.title=complete?"সব প্রশ্নের উত্তর দেওয়া হয়েছে — FINAL SUBMIT করতে ক্লিক করুন":"সব প্রশ্নের উত্তর না দেওয়া পর্যন্ত FINAL SUBMIT করা যাবে না";
-
+  btn.title=complete?"সব প্রশ্নের উত্তর দেওয়া হয়েছে":"সব প্রশ্নের উত্তর না দেওয়া পর্যন্ত Submit করা যাবে না";
 }
 
 function startViewQuestions(){
@@ -604,9 +652,9 @@ function startViewQuestions(){
           <span>Scroll up/down to read</span>
         </div>
         <div class="viewQuestion">
-          <div class="qnum">PROSE · PASSAGE-1</div>
-          <div class="question">Read the following passages carefully and answer the questions given below: [WBPTET 2022]</div>
-          <div class="passageText">${esc(PASSAGE_TEXT)}</div>
+          <div class="qnum">${PASSAGE_LABEL}</div>
+          <div class="question">${esc(PASSAGE_INTRO)}</div>
+          <div class="passageText">${esc(PASSAGE_TEXT).replace(/\n/g,"<br><br>")}</div>
         </div>
         <div id="viewQuestionList">
           ${list.map(q=>`
@@ -639,32 +687,38 @@ function startExam(){
   const n=$("candidate").value.trim();
   if(!n){$("candidate").focus();return}
 
-  // Start immediately from the user's tap. Do not wait for the central
-  // test registry/network, so WhatsApp/GitHub mobile launches remain smooth.
-  // The configured duration is refreshed in the background.
   const startBtn=$("startBtn");
   if(startBtn)startBtn.disabled=true;
   ensureAudio();
   candidate=n;idx=0;answers={};submitted=false;warningGiven=false;
+  revisionMode=false;revisionQuestions=[];revisionAnswers={};revisionSubmitted=false;mainResult=null;
   startAt=Date.now();
   examStartAt=new Date(startAt).toISOString();
   $("start").classList.add("hidden");
   $("result").classList.add("hidden");
   $("admin").classList.add("hidden");
+  $("revisionBanner").classList.remove("show");
   $("exam").classList.remove("hidden");
+  $("timer").classList.remove("warn","real-exam-last2","timerHidden");
+  $("timer").textContent=formatTime(DURATION);
   render();
+  clearInterval(timerHandle);
   timerHandle=setInterval(tick,250);
   tick();
   if(startBtn)startBtn.disabled=false;
-
 }
 
 function tick(){
+  if(revisionMode)return;
   const used=Math.floor((Date.now()-startAt)/1000),left=DURATION-used;
   $("timer").textContent=formatTime(Math.max(0,left));
-  const lastTen=left<=600 && left>0;
-  $("timer").classList.toggle("warn",lastTen);
-  if(lastTen && !warningGiven){
+
+  // Requested: warning + blinking only during the LAST TWO MINUTES.
+  const lastTwo=left<=120 && left>0;
+  $("timer").classList.toggle("warn",lastTwo);
+  $("timer").classList.toggle("real-exam-last2",lastTwo);
+
+  if(lastTwo && !warningGiven){
     warningGiven=true;
     try{
       const c=ensureAudio();
@@ -684,21 +738,30 @@ function tick(){
             }catch(e){}
           },delay);
         };
-        playWarningTone(0);
-        playWarningTone(360);
-        playWarningTone(720);
+        playWarningTone(0);playWarningTone(360);playWarningTone(720);
       }
     }catch(e){}
-    setTimeout(()=>{if(!submitted) alert("⚠️ সতর্কবার্তা: পরীক্ষার শেষ ১০ মিনিট শুরু হয়েছে।");},50);
+    setTimeout(()=>{if(!submitted && !revisionMode) alert("⚠️ সতর্কবার্তা: পরীক্ষার শেষ ২ মিনিট শুরু হয়েছে।");},50);
   }
+
   if(left<=0 && !submitted)submitExam();
 }
 
 function submitExam(){
-  if(submitted)return;submitted=true;clearInterval(timerHandle);
+  if(submitted)return;
+  submitted=true;
+  clearInterval(timerHandle);
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
   const used=Math.min(DURATION,Math.floor((Date.now()-startAt)/1000));
   let correct=0,attempted=0;
-  QUESTIONS.forEach(q=>{if(answers[q.id]){attempted++;if(answers[q.id]===q.answer)correct++}});
+  QUESTIONS.forEach(q=>{
+    if(answers[q.id]){
+      attempted++;
+      if(answers[q.id]===q.answer)correct++;
+    }
+  });
   const incorrect=attempted-correct,unanswered=QUESTIONS.length-attempted;
   const result={
     id:(crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random()),
@@ -712,7 +775,26 @@ function submitExam(){
 }
 
 function showResult(r){
-  $("exam").classList.add("hidden");$("result").classList.remove("hidden");
+  clearInterval(timerHandle);
+  clearInterval(revisionTimerHandle);
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+
+  const wrongCount=QUESTIONS.filter(q=>r.answers[q.id] && r.answers[q.id]!==q.answer).length;
+
+  // After FINAL SUBMIT, automatically open the wrong questions for revision.
+  // No button is required. The blinking heading appears above the questions.
+  if(wrongCount){
+    mainResult=r;
+    startRevision(r.answers);
+    return;
+  }
+
+  // If there are no wrong answers, show the normal final result.
+  $("revisionBanner").classList.remove("show");
+  $("exam").classList.add("hidden");
+  $("result").classList.remove("hidden");
   const rows=QUESTIONS.map(q=>{
     const a=r.answers[q.id]||"",ok=a===q.answer;
     const your=a?`${a}. ${q.options[answerIndex(a)]}`:"Unanswered";
@@ -722,6 +804,7 @@ function showResult(r){
       <span class="tag ${!a?"skip":ok?"ok":"bad"}">${!a?"UNANSWERED":ok?"CORRECT":"WRONG"}</span>
        <div style="margin-top:8px"><div class="explain"><b>ব্যাখ্যা:</b> ${esc(q.explanation)}</div></div></div></div>`;
   }).join("");
+
   $("result").innerHTML=`<div class="resultCard">
     <h1 class="resultTitle">MOCK TEST RESULT</h1>
     <div class="candidate">${esc(r.candidate)}</div>
@@ -745,17 +828,54 @@ function showResult(r){
 
 function startRevision(originalAnswers){
   revisionQuestions=QUESTIONS.filter(q=>originalAnswers[q.id] && originalAnswers[q.id]!==q.answer);
-  if(!revisionQuestions.length){revisionMode=false;clearInterval(revisionTimerHandle);showResult(mainResult);return;}
-  revisionMode=true;revisionAnswers={};revisionSubmitted=false;idx=0;revisionStartAt=Date.now();
-  $("result").classList.add("hidden");$("admin").classList.add("hidden");$("start").classList.add("hidden");$("exam").classList.remove("hidden");
-  $("timer").classList.remove("warn");$("timer").textContent="10:00";render();
-  clearInterval(revisionTimerHandle);revisionTimerHandle=setInterval(tickRevision,250);tickRevision();
+  if(!revisionQuestions.length){
+    revisionMode=false;
+    clearInterval(revisionTimerHandle);
+    showResult(mainResult);
+    return;
+  }
+
+  revisionMode=true;
+  revisionAnswers={};
+  revisionSubmitted=false;
+  idx=0;
+  revisionStartAt=Date.now();
+
+  $("result").classList.add("hidden");
+  $("admin").classList.add("hidden");
+  $("start").classList.add("hidden");
+  $("exam").classList.remove("hidden");
+  $("revisionBanner").innerHTML='<span class="revisionStar">★</span> <span class="revisionText">যেগুলি ভুল করলাম</span> <span class="revisionStar">★</span>';
+  $("revisionBanner").classList.add("show");
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").textContent="00:00";
+  $("timer").classList.add("timerHidden");
+  $("correctBtn").textContent=`CORRECT: 0/${revisionQuestions.length}`;
+  render();
+
+  clearInterval(revisionTimerHandle);
+  revisionTimerHandle=null;
 }
-function tickRevision(){if(!revisionMode||revisionSubmitted)return; const left=Math.max(0,600-Math.floor((Date.now()-revisionStartAt)/1000)); $("timer").textContent=formatTime(left); if(left<=0)finishRevision();}
+
+function tickRevision(){
+  // Revision Test is untimed. Keep the main timer completely hidden.
+  if(!revisionMode||revisionSubmitted)return;
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+}
+
 function finishRevision(){
-  if(revisionSubmitted)return;revisionSubmitted=true;clearInterval(revisionTimerHandle);
-  revisionMode=false;revisionQuestions=[];revisionAnswers={};$("revisionBanner")?.classList.remove("show");$("timer").textContent="00:00";$("timer").classList.remove("warn");
-  // Revision is practice only: no revision score/result is calculated or shown.
+  if(revisionSubmitted)return;
+  revisionSubmitted=true;
+  clearInterval(revisionTimerHandle);
+  clearInterval(timerHandle);
+  revisionMode=false;
+  $("revisionBanner").classList.remove("show");
+  $("timer").textContent="00:00";
+  $("timer").classList.remove("warn","real-exam-last2");
+  $("timer").classList.add("timerHidden");
+  // Revision is practice only; the original exam result remains unchanged.
   if(mainResult)showResult(mainResult);
 }
 
@@ -772,7 +892,8 @@ function adminLogin(){
   $("exam").classList.add("hidden");
   $("result").classList.add("hidden");
   $("admin").classList.remove("hidden");
-  $("timer").textContent="30:00";
+  $("timer").textContent="00:00";
+  $("timer").classList.add("timerHidden");
   $("correctBtn").textContent="CORRECT: 0";
   renderCentralAdmin();
 }
@@ -935,6 +1056,20 @@ function downloadCSV(){
   setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
 
+function updateSharePreview(){
+  document.title=TEST_TITLE;
+  const set=(selector,content)=>{
+    const el=document.querySelector(selector);
+    if(el)el.setAttribute("content",content);
+  };
+  set('meta[name="description"]',TEST_TITLE+" — Comprehension Test");
+  set('meta[property="og:title"]',TEST_TITLE);
+  set('meta[property="og:description"]',PASSAGE_INTRO);
+  set('meta[name="twitter:title"]',TEST_TITLE);
+  set('meta[name="twitter:description"]',PASSAGE_INTRO);
+  set('meta[name="application-name"]',TEST_TITLE);
+}
+
 function toggleTheme(){
   document.body.classList.toggle("light");
   localStorage.setItem("ctet_mock_theme",document.body.classList.contains("light")?"light":"dark");
@@ -957,27 +1092,28 @@ $("clearAdmin").onclick=()=>{
   alert("Central Scoreboard data is stored in Google Sheet. To preserve all previous results, this portal does not delete them.");
 };
 loadTheme();
+updateSharePreview();
 </script>
-<script id="REAL_EXAM_LAST10_TIMER_ONLY_SCRIPT">
+<script id="REAL_EXAM_LAST2_TIMER_ONLY_SCRIPT">
 (function(){
   function update(){
     var t=document.getElementById('timer');
     if(!t)return;
     if(typeof revisionMode!=='undefined' && revisionMode){
-      t.classList.remove('real-exam-last10');
+      t.classList.remove('real-exam-last2');
       return;
     }
     var s=(t.textContent||'').trim();
     var m=s.match(/^(\d{1,2}):(\d{2})$/);
     if(!m){
-      t.classList.remove('real-exam-last10');
+      t.classList.remove('real-exam-last2');
       return;
     }
     var seconds=parseInt(m[1],10)*60+parseInt(m[2],10);
-    if(seconds>0 && seconds<=600){
-      t.classList.add('real-exam-last10');
+    if(seconds>0 && seconds<=120){
+      t.classList.add('real-exam-last2');
     }else{
-      t.classList.remove('real-exam-last10');
+      t.classList.remove('real-exam-last2');
     }
   }
   setInterval(update,100);
